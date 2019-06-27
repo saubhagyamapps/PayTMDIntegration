@@ -17,7 +17,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
 public class checksum extends AppCompatActivity implements PaytmPaymentTransactionCallback {
     String custid = "", orderId = "", mid = "";

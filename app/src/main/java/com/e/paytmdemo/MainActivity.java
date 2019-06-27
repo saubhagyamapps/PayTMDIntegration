@@ -11,18 +11,20 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText orderid, custid;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //initOrderId();
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
-        Button btn = (Button) findViewById(R.id.start_transaction);
-        orderid = (EditText) findViewById(R.id.orderid);
-        custid = (EditText) findViewById(R.id.custid);
+        Button btn = findViewById(R.id.start_transaction);
+        orderid = findViewById(R.id.orderid);
+        custid = findViewById(R.id.custid);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

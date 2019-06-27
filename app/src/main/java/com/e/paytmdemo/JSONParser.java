@@ -10,9 +10,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
-/**
- * Created by kamal_bunkar on 15-01-2019.
- */
+
 public class JSONParser {
     static InputStream is = null;
     static JSONObject jObj = null;
